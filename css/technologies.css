@@ -1,0 +1,33 @@
+.technologies__title {
+  color: #42446e;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.technologies__sub-title {
+  color: var(--dark-content, #666);
+  font-family: Poppins;
+  font-size: 32px;
+  margin-bottom: 90px;
+}
+
+.technologies__inner {
+  padding: 100px 0;
+  text-align: center;
+}
+.technologies__list {
+  text-align: left;
+  width: 800px;
+  margin: 0 auto;
+}
+.technologies__list-item {
+  color: #3e3f3a;
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.technologies__list-item span {
+  color: #07070f;
+}

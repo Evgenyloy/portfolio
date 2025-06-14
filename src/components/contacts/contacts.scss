@@ -1,0 +1,35 @@
+@import '../../style/style.scss';
+
+.contacts {
+ // background-color: #f7f4f4;
+  &__inner {
+    padding: 200px 0;
+    p {
+      @extend %extend-sub-title;
+      margin-bottom: 0;
+      text-align: center;
+
+      line-height: 50px;
+
+      background: var(
+        --Gradient-Heading,
+        linear-gradient(190deg, #13b0f5 -2.06%, #e70faa 100%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__title {
+    @extend %extend-title;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contacts__inner {
+    padding: 130px 0;
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../style/style.scss';
+
+.about {
+  &__inner {
+    padding: 150px 0;
+    text-align: center;
+  }
+
+  &__title {
+    @extend %extend-title;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  &__sub-title {
+    @extend %extend-sub-title;
+  }
+
+  &__text {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    color: var(--dark-content, #575757);
+    line-height: 35px;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 15px;
+
+    span {
+      display: block;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .about__inner {
+    padding: 100px 0;
+  }
+
+  .about__sub-title {
+    margin-bottom: 50px;
+  }
+}

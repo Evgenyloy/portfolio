@@ -1,0 +1,36 @@
+@import '../../style/style.scss';
+
+.hero {
+  background-color: #f7f4f4;
+
+  background-image: url('../../image/drawing.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 970px 200px;
+  background-position: 1100px 100px;
+
+  color: var(--header-text);
+  text-align: center;
+  &__inner {
+    padding: 200px 0;
+    text-align: center;
+  }
+  &__title {
+    color: $title-color;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-size: calc(22px + 38 * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'DM Sans', sans-serif;
+
+    span {
+      font-size: calc(20px + 20 * ((100vw - 320px) / (1920 - 320)));
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .hero__inner {
+    padding: 150px 0;
+  }
+}

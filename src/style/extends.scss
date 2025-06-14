@@ -1,0 +1,16 @@
+@import './variables.scss';
+
+%extend-title {
+  color: $title-color;
+  font-family: $main-font;
+  font-size: $title-font-size;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+%extend-sub-title {
+  color: $subTitle-color;
+  font-family: $main-font;
+  font-size: $subtitle-font-size;
+  margin-bottom: 90px;
+}

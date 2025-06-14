@@ -1,0 +1,20 @@
+.footer__inner {
+  border-top: 2px solid var(--dark-content, #a5a4a4);
+  padding: 50px 0;
+}
+.footer__nav-list {
+  display: flex;
+  gap: 40px;
+  width: 600px;
+}
+.footer__nav-item {
+  cursor: pointer;
+  color: #666;
+  /*  font-family: $main-font; */
+  font-weight: 400;
+  font-size: 18px;
+  transition: all 0.1s linear;
+}
+.footer__nav-item:hover {
+  color: #050505;
+}
