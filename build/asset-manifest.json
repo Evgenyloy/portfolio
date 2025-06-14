@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ff1cf9b.css",
-    "main.js": "/static/js/main.e6d315c0.js",
-    "static/media/mmogames.jpeg": "/static/media/mmogames.ef5f70f4e0e382f48b70.jpeg",
-    "static/media/калькулятор.png": "/static/media/калькулятор.755364adfe16f990521c.png",
-    "static/media/nasa.png": "/static/media/nasa.a4972f26c321a0d04444.png",
-    "static/media/books.png": "/static/media/books.e86b314cc366cf2dc846.png",
-    "static/media/shopy3.png": "/static/media/shopy3.08d9db1e2a77f7267910.png",
-    "static/media/drawing.svg": "/static/media/drawing.ab9ec134ca9855621754.svg",
-    "index.html": "/index.html",
-    "main.4ff1cf9b.css.map": "/static/css/main.4ff1cf9b.css.map",
-    "main.e6d315c0.js.map": "/static/js/main.e6d315c0.js.map"
+    "main.css": "/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/static/css/main.6792f61e.css",
+    "main.js": "/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/static/js/main.8d5f5cb4.js",
+    "static/media/mmogames.jpeg": "/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/static/media/mmogames.ef5f70f4e0e382f48b70.jpeg",
+    "static/media/калькулятор.png": "/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/static/media/калькулятор.755364adfe16f990521c.png",
+    "static/media/nasa.png": "/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/static/media/nasa.a4972f26c321a0d04444.png",
+    "static/media/books.png": "/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/static/media/books.e86b314cc366cf2dc846.png",
+    "static/media/shopy3.png": "/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/static/media/shopy3.08d9db1e2a77f7267910.png",
+    "static/media/drawing.svg": "/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/static/media/drawing.ab9ec134ca9855621754.svg",
+    "index.html": "/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/index.html",
+    "main.6792f61e.css.map": "/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/static/css/main.6792f61e.css.map",
+    "main.8d5f5cb4.js.map": "/%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9/static/js/main.8d5f5cb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ff1cf9b.css",
-    "static/js/main.e6d315c0.js"
+    "static/css/main.6792f61e.css",
+    "static/js/main.8d5f5cb4.js"
   ]
 }
