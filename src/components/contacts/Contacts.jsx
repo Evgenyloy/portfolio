@@ -25,12 +25,12 @@ const Contacts = () => {
           <p className="contacts__item">
             <BsTelephone className="contacts__icon" />
             <a
-              href="tel:+79611892943"
+              href="tel:+79092153830"
               className="contacts__link"
               aria-label="Call Evgeny"
               rel="noopener noreferrer"
             >
-              +7-961-189-29-43
+              +7-909-215-38-30
             </a>
           </p>
           <p className="contacts__item">

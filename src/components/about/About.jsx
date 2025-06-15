@@ -49,8 +49,8 @@ const About = () => {
                   evgenyloy@gmail.com
                 </a>{" "}
                 or{" "}
-                <a href="tel:+79611892943" className="about__link">
-                  +7-961-189-29-43
+                <a href="tel:+79092153830" className="about__link">
+                  +7-909-215-38-30
                 </a>
                 .
               </p>
