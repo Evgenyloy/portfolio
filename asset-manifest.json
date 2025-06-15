@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6562320c.css",
-    "main.js": "/portfolio/static/js/main.e200f906.js",
+    "main.css": "/portfolio/static/css/main.f1303c99.css",
+    "main.js": "/portfolio/static/js/main.ba0a3dce.js",
     "static/media/mmogames.jpeg": "/portfolio/static/media/mmogames.ef5f70f4e0e382f48b70.jpeg",
     "static/media/калькулятор.png": "/portfolio/static/media/калькулятор.755364adfe16f990521c.png",
     "static/media/nasa.png": "/portfolio/static/media/nasa.a4972f26c321a0d04444.png",
@@ -9,11 +9,11 @@
     "static/media/shopy3.png": "/portfolio/static/media/shopy3.08d9db1e2a77f7267910.png",
     "static/media/drawing.svg": "/portfolio/static/media/drawing.ab9ec134ca9855621754.svg",
     "index.html": "/portfolio/index.html",
-    "main.6562320c.css.map": "/portfolio/static/css/main.6562320c.css.map",
-    "main.e200f906.js.map": "/portfolio/static/js/main.e200f906.js.map"
+    "main.f1303c99.css.map": "/portfolio/static/css/main.f1303c99.css.map",
+    "main.ba0a3dce.js.map": "/portfolio/static/js/main.ba0a3dce.js.map"
   },
   "entrypoints": [
-    "static/css/main.6562320c.css",
-    "static/js/main.e200f906.js"
+    "static/css/main.f1303c99.css",
+    "static/js/main.ba0a3dce.js"
   ]
 }
