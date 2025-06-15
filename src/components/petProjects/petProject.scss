@@ -1,124 +1,113 @@
 @import '../../style/style.scss';
 
 .pet-projects {
-    background-color: #f7f4f4;
-    padding: 150px 0;
+    background: #f9fafb;
+    padding: 80px 0;
     text-align: center;
 
-    h2 {
-        color: #42446e;
-        font-family: "Roboto Condensed", sans-serif;
+    &__title-main {
+        font-family: 'DM Sans', sans-serif;
         font-size: calc(24px + 18*(100vw - 320px) / 1600);
         font-weight: 700;
-        margin-bottom: 20px;
+        color: #42446e;
+        margin-bottom: 15px;
     }
 
-    h3 {
-        color: var(--dark-content, #666);
-        font-family: "Roboto Condensed", sans-serif;
+    &__subtitle {
+        font-family: 'DM Sans', sans-serif;
         font-size: calc(18px + 14*(100vw - 320px) / 1600);
+        color: var(--dark-content, #666);
         margin-bottom: 90px;
-    }
-
-    &__img {
-        width: 340px;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 4px;
-
     }
 
     &__inner {
         display: flex;
         gap: 50px;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
-    &__title {
-        padding: 0 20px;
-        padding: 35px 0;
-        color: #3e3f3a;
-        text-align: center;
-        font-size: 28px;
-        font-weight: 400;
-
-        cursor: context-menu;
-    }
-
     &__item {
-        cursor: pointer;
         position: relative;
-        background-color: #fff;
-        border-radius: 5px;
+        background: #fff;
+        border-radius: 10px;
         overflow: hidden;
-        /*  max-width: 300px; */
-        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2);
-        transition: all 0.1s linear;
-        padding: 3px;
+        max-width: 360px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        padding: 10px;
 
         &:hover {
-            box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
         }
+    }
 
+    &__img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
     }
 
     &__link {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        right: 0;
+        bottom: 0;
     }
-}
 
-
-
-.item-social {
-    color: #5b5c58;
-    font-weight: 600;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.item-social-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    gap: 5px;
-
-    &:hover .item-social__link,
-    &:hover .item-social__link,
-    &:hover .item-social__git,
-    &:hover .item-social__chain {
-        color: black;
+    &__title {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: #1a1a1a;
+        padding: 20px 15px 10px;
+        text-align: left;
     }
+
+    &__description {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 16px;
+        color: #555;
+        padding: 0 15px 15px;
+        text-align: left;
+        line-height: 1.5;
+
+    }
+
+
+
+
+
 }
 
-.item-social__chain {
-    transition: all 0.1s linear;
-    color: #5b5c58;
-    font-weight: 600;
-}
-
-.item-social__link {
-    transition: all 0.1s linear;
-    color: #5b5c58;
-    font-weight: 600;
-}
-
-.item-social__git {
-    transition: all 0.1s linear;
-    color: #5b5c58;
-    font-weight: 600;
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
     .pet-projects__inner {
-        justify-content: center;
+        gap: 20px;
+    }
+
+    .pet-projects__item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .pet-projects {
+        padding: 60px 0;
+    }
+
+    .pet-projects__title-main {
+        font-size: 28px;
+    }
+
+    .pet-projects__subtitle {
+        font-size: 18px;
+    }
+
+    .pet-projects__img {
+        height: 180px;
     }
 }

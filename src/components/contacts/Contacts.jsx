@@ -1,5 +1,8 @@
-import './contacts.scss';
+import "./contacts.scss";
 
+import { HiOutlineMail } from "react-icons/hi";
+import { BsTelephone } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
 const Contacts = () => {
   return (
     <div className="contacts">
@@ -8,8 +11,40 @@ const Contacts = () => {
           <h2 className="contacts__title">
             For any questions, <br /> you can contact me by email or phone:
           </h2>
-          <p>evgenyloy@gmail.com</p>
-          <p>8-961-189-29-43</p>
+          <p className="contacts__item">
+            <HiOutlineMail className="contacts__icon" />
+            <a
+              href="mailto:evgenyloy@gmail.com"
+              className="contacts__link"
+              aria-label="Send email to Evgeny"
+              rel="noopener noreferrer"
+            >
+              evgenyloy@gmail.com
+            </a>
+          </p>
+          <p className="contacts__item">
+            <BsTelephone className="contacts__icon" />
+            <a
+              href="tel:+79611892943"
+              className="contacts__link"
+              aria-label="Call Evgeny"
+              rel="noopener noreferrer"
+            >
+              +7-961-189-29-43
+            </a>
+          </p>
+          <p className="contacts__item">
+            <AiFillGithub className="contacts__icon" />
+            <a
+              href="https://github.com/Evgenyloy"
+              className="contacts__link"
+              aria-label="Visit Evgeny's GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </p>
         </div>
       </div>
     </div>

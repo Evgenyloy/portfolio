@@ -6,48 +6,59 @@ const About = () => {
       <div className="container">
         <div className="about__inner">
           <h2 className="about__title">About</h2>
-          <h3 className="about__sub-title">A little bit about yourself</h3>
-          <p className="about__text">
-            <span>
-              Hi, I’m Evgeny, a beginner frontend developer passionate about
-              creating responsive and user-friendly web applications. I
-              specialize in building clean, modern interfaces using React,
-              TypeScript, and advanced CSS techniques like SASS and BEM
-              methodology. My goal is to craft digital products that are both
-              functional and visually appealing.
-            </span>
-            <span>
-              What I Do: Build responsive and pixel-perfect interfaces using
-              media queries, flexible layouts, and modern CSS practices. <br />{" "}
-              Develop dynamic web applications with React, utilizing both class
-              components and hooks, and integrating libraries like Redux, RTK
-              Query, and React Router DOM for state management and navigation.
-              <br /> Write clean, typed code with TypeScript to ensure
-              scalability and maintainability. <br /> Integrate APIs to create
-              interactive features, such as real-time data fetching (e.g., NASA
-              API, book search) and drag-and-drop functionality (e.g.,
-              interactive calculator). <br /> Focus on user experience, ensuring
-              intuitive navigation and accessibility across all devices.
-            </span>
-            <span>
-              My Journey: <br /> I started my frontend development journey by
-              learning HTML and CSS, then deepened my skills through Udemy
-              courses on JavaScript, TypeScript, and React. Since then, I’ve
-              built a diverse portfolio of projects, from e-commerce platforms
-              to interactive games and API-driven applications. I’m constantly
-              learning and experimenting with new tools to stay at the forefront
-              of web development.
-            </span>
-            <span>
-              Connect: <br />
-              Check out my projects below or reach out to collaborate via email:
-              evgenyloy@gmail.com or phone: +7-961-189-29-43.
-            </span>
-          </p>
+          <h3 className="about__sub-title">A little bit about myself</h3>
+          <div className="about__content">
+            <div className="about__section">
+              <p>
+                Hi, I’m Evgeny, a beginner frontend developer passionate about
+                creating responsive, user-friendly web applications. I
+                specialize in crafting clean, modern interfaces with React,
+                TypeScript, and advanced CSS techniques like SASS and BEM.
+              </p>
+            </div>
+            <div className="about__section">
+              <h4 className="about__section-title">What I Do</h4>
+              <ul className="about__list">
+                <li>Craft responsive, pixel-perfect UI with modern CSS.</li>
+                <li>
+                  Build dynamic React apps with hooks, Redux, and React Router.
+                </li>
+                <li>Write scalable, typed code using TypeScript.</li>
+                <li>
+                  Integrate APIs for real-time features (e.g., NASA API, book
+                  search).
+                </li>
+                <li>Focus on intuitive UX and accessibility across devices.</li>
+              </ul>
+            </div>
+            <div className="about__section">
+              <h4 className="about__section-title">My Journey</h4>
+              <p>
+                I started with HTML and CSS, then mastered JavaScript,
+                TypeScript, and React through Udemy courses. My portfolio
+                includes e-commerce platforms, interactive games, and API-driven
+                apps. I’m always learning new tools to stay ahead in web
+                development.
+              </p>
+            </div>
+            <div className="about__section">
+              <h4 className="about__section-title">Connect</h4>
+              <p>
+                Check out my projects below or reach out via{" "}
+                <a href="mailto:evgenyloy@gmail.com" className="about__link">
+                  evgenyloy@gmail.com
+                </a>{" "}
+                or{" "}
+                <a href="tel:+79611892943" className="about__link">
+                  +7-961-189-29-43
+                </a>
+                .
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
 export default About;

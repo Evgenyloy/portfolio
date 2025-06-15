@@ -1,35 +1,65 @@
 @import '../../style/style.scss';
 
 .contacts {
- // background-color: #f7f4f4;
+
+  // background-color: #f7f4f4; /* Оставлен закомментированным, как в оригинале */
   &__inner {
     padding: 200px 0;
-    p {
-      @extend %extend-sub-title;
-      margin-bottom: 0;
-      text-align: center;
-
-      line-height: 50px;
-
-      background: var(
-        --Gradient-Heading,
-        linear-gradient(190deg, #13b0f5 -2.06%, #e70faa 100%)
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
   }
+
   &__title {
     @extend %extend-title;
     text-align: center;
     line-height: 1.5;
     margin-bottom: 50px;
   }
-}
 
-@media (max-width: 700px) {
-  .contacts__inner {
-    padding: 130px 0;
+  &__item {
+    @extend %extend-sub-title;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    line-height: 50px;
+  }
+
+  &__link {
+    background: var(--Gradient-Heading,
+        linear-gradient(190deg, #13b0f5 -2.06%, #e70faa 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__icon {
+    font-size: 24px;
+    background: var(--Gradient-Heading,
+        linear-gradient(190deg, #13b0f5 -2.06%, #e70faa 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (max-width: 700px) {
+    &__inner {
+      padding: 130px 0;
+    }
+
+    &__item {
+      font-size: 16px;
+      line-height: 40px;
+    }
+
+    &__icon {
+      font-size: 20px;
+    }
   }
 }
