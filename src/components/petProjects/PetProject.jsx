@@ -8,7 +8,7 @@ const PetProject = () => {
     {
       title: "Asteroid Tracking App",
       description:
-        "A web app for tracking asteroids using NASA's API. Built with React and TypeScript, featuring real-time data fetching and responsive design.",
+        "Веб-приложение для отслеживания астероидов с использованием API NASA. Создано с помощью React и TypeScript, обеспечивает получение данных в реальном времени и имеет адаптивный дизайн.",
       image: nasa,
       demoLink: "https://nasa-api-sepia-one.vercel.app",
       alt: "NASA Asteroid Tracking App Screenshot",
@@ -16,7 +16,7 @@ const PetProject = () => {
     {
       title: "Book Search App",
       description:
-        "An application for searching books using Google Books API. Developed with React and styled with SASS for a clean, responsive UI.",
+        "Приложение для поиска книг с использованием API Google Books. Разработано с помощью React и оформлено с помощью SASS для создания чистого, отзывчивого пользовательского интерфейса.",
       image: books,
       demoLink: "https://search-book-api-indol.vercel.app",
       alt: "Book Search App Screenshot",
@@ -24,7 +24,7 @@ const PetProject = () => {
     {
       title: "Drag and Drop Calculator",
       description:
-        "An interactive calculator with drag-and-drop functionality. Built with JavaScript, React, and CSS for a unique user experience.",
+        "Интерактивный калькулятор с функцией перетаскивания. Создан с использованием JavaScript, React и CSS для уникального пользовательского опыта.",
       image: calc,
       demoLink: "https://evgenyloy.github.io/drag-and-drop-calculator/",
       alt: "Drag and Drop Calculator Screenshot",
@@ -34,8 +34,11 @@ const PetProject = () => {
   return (
     <div className="pet-projects">
       <div className="container">
-        <h2 className="pet-projects__title-main">Other Projects</h2>
-        <h4 className="pet-projects__subtitle">Things I’ve built so far</h4>
+        <h2 className="pet-projects__title-main">Другие проекты</h2>
+        <h4 className="pet-projects__subtitle">
+          Проекты реализованные в рамках тестовых заданий находящихся в
+          свободном доступе
+        </h4>
         <div className="pet-projects__inner">
           {projects.map((project, index) => (
             <div className="pet-projects__item" key={index}>

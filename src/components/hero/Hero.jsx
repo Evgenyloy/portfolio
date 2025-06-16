@@ -1,4 +1,4 @@
-import './hero.scss';
+import "./hero.scss";
 
 const Hero = () => {
   return (
@@ -7,8 +7,8 @@ const Hero = () => {
         <div className="hero__inner">
           <div className="hero__text-block">
             <h1 className="hero__title">
-              Hi, My name is Evgeniy <br />{' '}
-              <span>I'm beginner a front-end developer</span>
+              Привет, меня зовут Евгений <br />{" "}
+              <span>Я начинающий фронтенд-разработчик</span>
             </h1>
           </div>
         </div>

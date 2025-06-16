@@ -1,55 +1,66 @@
-import { useEffect } from 'react';
-import './footer.scss';
+import { useEffect, useRef } from "react";
+import "./footer.scss";
 
 const Footer = () => {
-  const smoothScroll = (arg) => {
-    arg.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+  const refs = {
+    hero: useRef(null),
+    projects: useRef(null),
+    technologies: useRef(null),
+    about: useRef(null),
+    contacts: useRef(null),
   };
 
-  let projects, hero, technologies, about, contacts;
-
   useEffect(() => {
-    hero = document.querySelector('.App');
-    projects = document.querySelector('.projects');
-    technologies = document.querySelector('.technologies');
-    about = document.querySelector('.about');
-    contacts = document.querySelector('.contacts');
+    refs.hero.current = document.querySelector(".App");
+    refs.projects.current = document.querySelector(".projects");
+    refs.technologies.current = document.querySelector(".technologies");
+    refs.about.current = document.querySelector(".about");
+    refs.contacts.current = document.querySelector(".contacts");
   }, []);
+
+  const smoothScroll = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
     <footer className="footer">
       <div className="container">
         <nav className="footer__inner">
           <ul className="footer__nav-list">
-            <li className="footer__nav-item" onClick={() => smoothScroll(hero)}>
-              Home
+            <li
+              className="footer__nav-item"
+              onClick={() => smoothScroll(refs.hero)}
+            >
+              Начало
             </li>
             <li
               className="footer__nav-item"
-              onClick={() => smoothScroll(projects)}
+              onClick={() => smoothScroll(refs.projects)}
             >
-              Projects
+              Проекты
             </li>
             <li
               className="footer__nav-item"
-              onClick={() => smoothScroll(technologies)}
+              onClick={() => smoothScroll(refs.technologies)}
             >
-              Tech Stack
+              Технологии
             </li>
             <li
               className="footer__nav-item"
-              onClick={() => smoothScroll(about)}
+              onClick={() => smoothScroll(refs.about)}
             >
-              About
+              Обо мне
             </li>
             <li
               className="footer__nav-item"
-              onClick={() => smoothScroll(contacts)}
+              onClick={() => smoothScroll(refs.contacts)}
             >
-              Contact
+              Контакты
             </li>
           </ul>
         </nav>

@@ -11,10 +11,10 @@ const Technologies = () => {
     <div className="technologies">
       <div className="container">
         <div className="technologies__inner">
-          <h2 className="technologies__title">My Tech Stack</h2>
+          <h2 className="technologies__title">Стек</h2>
           <h3 className="technologies__sub-title">
             {" "}
-            Technologies I’ve been working with recently
+            Основные технологии, с которыми я умею работать
           </h3>
           <div className="technologies__list-wrapper">
             <ul className="technologies__list">

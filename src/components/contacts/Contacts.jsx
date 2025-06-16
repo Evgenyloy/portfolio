@@ -9,7 +9,7 @@ const Contacts = () => {
       <div className="container">
         <div className="contacts__inner">
           <h2 className="contacts__title">
-            For any questions, <br /> you can contact me by email or phone:
+            Вы можете связаться со мной по электронной почте или по телефону:
           </h2>
           <p className="contacts__item">
             <HiOutlineMail className="contacts__icon" />

@@ -7,9 +7,9 @@ import { AiFillGithub } from "react-icons/ai";
 const Projects = () => {
   const projects = [
     {
-      title: "Online store shopy",
+      title: "Интернет-магазин Shopy",
       description:
-        "Small online store. The project implements a shopping cart, favorites, product filters, and authorization via Firebase.",
+        "Небольшой интернет-магазин. На Проекте реализованна корзина, избранное, фильтры товаров и авторизация через Firebase.",
       stack: "JavaScript, React, Redux, React Router",
       image: shopyImg,
       demoLink: "https://shopy-ts-two.vercel.app",
@@ -17,9 +17,9 @@ const Projects = () => {
       alt: "Shopy Online Store Screenshot",
     },
     {
-      title: "MMOgames portal",
+      title: "Портал MMO игр",
       description:
-        "A site dedicated to the topic of multiplayer online games. It is possible to view news, as well as search and filter individual games.",
+        "Сайт, посвящен теме многопользовательских онлайн-игр. Возможен просмотр новостей, а также поиск и фильтрация отдельных игр.",
       stack: "JavaScript, React, Zustand, Tanstack Query",
       image: mmoImg,
       demoLink: "https://game-protal-ts2.vercel.app",
@@ -32,8 +32,8 @@ const Projects = () => {
     <div className="projects">
       <div className="container">
         <div className="projects__inner">
-          <h2 className="projects__title">Projects</h2>
-          <h3 className="projects__sub-title">My works for portfolio</h3>
+          <h2 className="projects__title">Проекты</h2>
+          <h3 className="projects__sub-title">Мои работы для портфолио</h3>
           <div className="projects__row">
             {projects.map((project, index) => (
               <div className="project__item item" key={index}>
@@ -48,7 +48,7 @@ const Projects = () => {
                   </div>
                   <h2 className="item__title">{project.title}</h2>
                   <p className="item__description">{project.description}</p>
-                  <p className="item__stack">Tech stack: {project.stack}</p>
+                  <p className="item__stack">Технологии: {project.stack}</p>
                   <a
                     href={project.demoLink}
                     className="item__link"
@@ -66,7 +66,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Live Preview
+                      Превью
                     </a>
                   </div>
                   <div className="item__link-wrapper">
@@ -77,7 +77,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      View Code
+                      Git Hub
                     </a>
                   </div>
                 </div>

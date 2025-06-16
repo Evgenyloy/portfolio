@@ -34,33 +34,27 @@ const Header = () => {
           <ul className="header__nav-list">
             <li
               className="header__nav-item"
-              onClick={() => smoothScroll(refs.hero)}
-            >
-              Home
-            </li>
-            <li
-              className="header__nav-item"
               onClick={() => smoothScroll(refs.projects)}
             >
-              Projects
+              Проекты
             </li>
             <li
               className="header__nav-item"
               onClick={() => smoothScroll(refs.technologies)}
             >
-              Tech Stack
+              Технологии
             </li>
             <li
               className="header__nav-item"
               onClick={() => smoothScroll(refs.about)}
             >
-              About
+              Обо мне
             </li>
             <li
               className="header__nav-item"
               onClick={() => smoothScroll(refs.contacts)}
             >
-              Contact
+              Контакты
             </li>
           </ul>
         </nav>
