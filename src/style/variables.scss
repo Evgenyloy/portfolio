@@ -1,9 +1,10 @@
 $title-color: #42446e;
 $subTitle-color: var(--dark-content, #666);
-$main-font: 'Roboto Condensed', sans-serif;
+$main-font: 'Roboto Condensed',
+sans-serif;
 $button-color: #666564;
 $title-font-size: calc(24px + 18 * ((100vw - 320px) / (1920 - 320)));
-$subtitle-font-size: calc(18px + 14 * ((100vw - 320px) / (1920 - 320)));
+$subtitle-font-size: calc(18px + 10 * ((100vw - 320px) / (1920 - 320)));
 /* $title-color: #3e3f3a; */
 
 $breakpoint_xxl: 1200px;

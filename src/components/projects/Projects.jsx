@@ -62,7 +62,7 @@ const Projects = () => {
                     <ImLink className="item__link-chain" />
                     <a
                       href={project.demoLink}
-                      className="item__live-link item__link"
+                      className="item__live-link"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -73,7 +73,7 @@ const Projects = () => {
                     <AiFillGithub className="item__link-git" />
                     <a
                       href={project.githubLink}
-                      className="item__git-link item__link"
+                      className="item__git-link"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

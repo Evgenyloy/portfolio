@@ -36,7 +36,7 @@ const PetProject = () => {
       <div className="container">
         <h2 className="pet-projects__title-main">Другие проекты</h2>
         <h4 className="pet-projects__subtitle">
-          Проекты реализованные в рамках тестовых заданий находящихся в
+          Проекты, реализованные в рамках тестовых заданий, находящихся в
           свободном доступе
         </h4>
         <div className="pet-projects__inner">

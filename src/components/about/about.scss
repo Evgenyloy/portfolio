@@ -24,11 +24,22 @@
     color: var(--dark-content, #333);
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.7;
   }
 
   &__section {
+    font-family: 'DM Sans', sans-serif;
     margin-bottom: 30px;
+    font-size: clamp(0.938rem, 0.183vw + 0.905rem, 1.125rem);
+  }
+
+  &__section {
+
+    p,
+    li {
+
+      font-family: 'DM Sans', sans-serif;
+    }
   }
 
   &__section-title {
@@ -86,5 +97,15 @@
 
   .about__content {
     font-size: 16px;
+  }
+
+  .about__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media(max-width: 450px) {
+  .about__title {
+    margin-bottom: 30px;
   }
 }

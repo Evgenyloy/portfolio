@@ -2,9 +2,8 @@
 
 .contacts {
 
-  // background-color: #f7f4f4; /* Оставлен закомментированным, как в оригинале */
   &__inner {
-    padding: 200px 0;
+    padding: 180px 0;
   }
 
   &__title {
@@ -61,5 +60,13 @@
     &__icon {
       font-size: 20px;
     }
+  }
+
+  @media (max-width: 400px) {
+    &__inner {
+      padding: 70px 0;
+    }
+
+
   }
 }
