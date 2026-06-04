@@ -1,0 +1,159 @@
+@import "../../style/style.scss";
+
+.pet-projects__item:not(:first-child)::before {
+  content: "для работы требуется VPN";
+  position: absolute;
+  top: -41px;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #474747;
+
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+  color: #fff;
+}
+.pet-projects__item:hover.pet-projects__item::before {
+  top: 0;
+}
+.pet-projects {
+  background: #f9fafb;
+  padding: 120px 0 160px;
+  text-align: center;
+
+  &__title-main {
+    font-family: "DM Sans", sans-serif;
+    font-size: calc(24px + 18 * (100vw - 320px) / 1600);
+    font-weight: 700;
+    color: #42446e;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: calc(18px + 10 * (100vw - 320px) / 1600);
+    color: var(--dark-content, #666);
+    margin-bottom: 90px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 360px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__title {
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(1.125rem, 0.488vw + 1.04rem, 1.625rem);
+    font-weight: 600;
+    color: #3e3f3a;
+    padding: 20px 15px 10px;
+    text-align: left;
+    margin: 5px 0;
+  }
+
+  &__description {
+    font-family: "DM Sans", sans-serif;
+    font-size: clamp(0.938rem, 0.183vw + 0.905rem, 1.125rem);
+    color: #555;
+    padding: 0 15px 15px;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .pet-projects__inner {
+    gap: 20px;
+  }
+
+  .pet-projects__item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pet-projects {
+    padding: 60px 0;
+  }
+
+  .pet-projects__title-main {
+    font-size: 28px;
+  }
+
+  .pet-projects__subtitle {
+    font-size: 18px;
+  }
+
+  .pet-projects__img {
+    height: 180px;
+  }
+}
+
+.pet-projects__link-wrapper {
+  cursor: pointer;
+  padding: 5px;
+  height: 20px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+}
+.pet-projects__link-git,
+.pet-projects__git-link {
+  transition: all 0.1s linear;
+  color: #5b5c58;
+  font-weight: 600;
+  font-size: clamp(0.875rem, 0.122vw + 0.854rem, 1rem);
+}
+.pet-projects__link-git {
+  font-size: 18px;
+}
+
+.pet-projects__link-wrapper:hover .pet-projects__link-git {
+  color: black;
+}
+.pet-projects__link-wrapper:hover .pet-projects__git-link {
+  color: black;
+}
