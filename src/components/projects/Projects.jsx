@@ -20,7 +20,7 @@ const Projects = () => {
     {
       title: "Book Search App",
       description:
-        "Приложение для поиска книг с использованием API Google Books. Разработано с помощью React и оформлено с помощью SASS для создания чистого, отзывчивого пользовательского интерфейса.",
+        "Приложение для поиска книг с использованием API Google Books. Разработано с помощью React. Реализованны карточки книг, инфинити скролл и маршрутизация.",
       stack: "React, Redux, React Router Dom, RTK Query.",
       image: mmoImg,
       demoLink: "https://search-book-api-pi.vercel.app",
