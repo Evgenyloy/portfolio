@@ -39,9 +39,9 @@ const PetProject = () => {
     <div className="pet-projects">
       <div className="container">
         <h2 className="pet-projects__title-main">Другие проекты</h2>
-        <h4 className="pet-projects__subtitle">
+        {/* <h4 className="pet-projects__subtitle">
           Проекты реализованные в рамках тестовых заданий
-        </h4>
+        </h4> */}
         <div className="pet-projects__inner">
           {projects.map((project, index) => (
             <div className="pet-projects__item" key={index}>
